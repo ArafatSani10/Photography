@@ -10,6 +10,7 @@ import {
 import Mainlayout from './Layout/Mainlayout.jsx';
 import Home from './Components/Pages/Home/Home.jsx';
 import About from './Components/Pages/About/About.jsx';
+import Services from './Components/Pages/Services/Services.jsx';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,11 @@ const router = createBrowserRouter([
       {
         path:'/about',
         element:<About></About>
+      },
+
+      {
+        path:"/services",
+        element:<Services></Services>
       },
     ],
   },

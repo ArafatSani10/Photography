@@ -378,11 +378,11 @@ const Navbar = () => {
     useEffect(() => {
         const handleScroll = () => {
             const currentScroll = window.scrollY;
-            
+
             // স্ক্রল ডাউন হলে এবং 80px এর বেশি হলে লুকাবে।
             // উপরে স্ক্রল করলেই আবার দেখাবে (কারণ currentScroll > lastScroll মিথ্যা হবে)।
-            setScrollingDown(currentScroll > lastScroll && currentScroll > 80); 
-            
+            setScrollingDown(currentScroll > lastScroll && currentScroll > 80);
+
             setIsScrolled(currentScroll > 50);
             setLastScroll(currentScroll);
         };
@@ -393,8 +393,8 @@ const Navbar = () => {
     const navItems = [
         { name: "Home", path: "/" },
         { name: "About", path: "/about" },
-        { name: "Portfolio", path: "/portfolio" },
         { name: "Services", path: "/services" },
+        { name: "Portfolio", path: "/portfolio" },
         { name: "Contact", path: "/contact" }
     ];
 
@@ -470,9 +470,9 @@ const Navbar = () => {
                     ? "bg-white/90 shadow-2xl shadow-black/5 backdrop-blur-sm"
                     : "bg-transparent"
                 }`}
-            // initial={{ y: -100 }} <--- Removed
-            // animate={{ y: 0 }}   <--- Removed
-            // transition={{ type: "spring", stiffness: 100, damping: 20 }} <--- Removed
+        // initial={{ y: -100 }} <--- Removed
+        // animate={{ y: 0 }}   <--- Removed
+        // transition={{ type: "spring", stiffness: 100, damping: 20 }} <--- Removed
         >
             <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
                 {/* Logo */}
@@ -499,7 +499,7 @@ const Navbar = () => {
                     initial="hidden"
                     // animate prop টি এখানে অক্ষত রাখা হয়েছে, কারণ এটি ন্যাভ আইটেমগুলির
                     // শুরুতে একবারের জন্য সুন্দর এন্ট্রি অ্যানিমেশন দেয়।
-                    animate="visible" 
+                    animate="visible"
                 >
                     {navItems.map((item, i) => {
                         const isActive = location.pathname === item.path;
@@ -639,81 +639,81 @@ const Navbar = () => {
 
             {/* Mobile Menu Overlay */}
             <AnimatePresence>
-    {isMenuOpen && (
-        <motion.div
-            className="fixed inset-0 h-screen bg-gradient-to-br from-black/95 to-gray-900/95 backdrop-blur-xl lg:hidden"
-            initial="closed"
-            animate="open"
-            exit="closed"
-            variants={mobileMenuVariants}
-        >
-            {/* Close Button */}
-            <motion.button
-                onClick={closeMenu}
-                className="absolute top-6 right-6 p-3 hover:bg-white/10 rounded-xl text-white"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                variants={mobileItemVariants}
-            >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </motion.button>
-
-            {/* Mobile Menu Content */}
-            <div className="h-full flex flex-col justify-center items-center px-6">
-                {/* Navigation Items */}
-                <motion.div
-                    className="flex flex-col space-y-8 text-center w-full max-w-sm"
-                    variants={containerVariants}
-                    initial="hidden"
-                    animate="visible"
-                >
-                    {navItems.map((item, i) => (
-                        <motion.div
-                            key={item.name}
-                            custom={i}
+                {isMenuOpen && (
+                    <motion.div
+                        className="fixed inset-0 h-screen bg-gradient-to-br from-black/95 to-gray-900/95 backdrop-blur-xl lg:hidden"
+                        initial="closed"
+                        animate="open"
+                        exit="closed"
+                        variants={mobileMenuVariants}
+                    >
+                        {/* Close Button */}
+                        <motion.button
+                            onClick={closeMenu}
+                            className="absolute top-6 right-6 p-3 hover:bg-white/10 rounded-xl text-white"
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
                             variants={mobileItemVariants}
                         >
-                            <NavLink
-                                to={item.path}
-                                onClick={closeMenu}
-                                className={({ isActive }) =>
-                                    `relative text-3xl font-semibold py-3 block transition-all ${isActive
-                                        ? "text-blue-400"
-                                        : "text-white hover:text-blue-300"
-                                    }`
-                                }
-                            >
-                                {item.name}
-                                {location.pathname === item.path && (
-                                    <motion.span
-                                        className="absolute left-1/2 -bottom-1 w-2 h-2 bg-blue-400 rounded-full"
-                                        layoutId="mobileActiveIndicator"
-                                        transition={{ type: "spring", stiffness: 500, damping: 30 }}
-                                    />
-                                )}
-                            </NavLink>
-                        </motion.div>
-                    ))}
-                </motion.div>
+                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </motion.button>
 
-                {/* Mobile Action Buttons */}
-                <motion.div
-                    className="absolute bottom-10 left-0 right-0 flex justify-center space-x-6"
-                    variants={mobileItemVariants}
-                >
-                    <button className="text-white hover:text-blue-300 transition-colors">
-                        ENG
-                    </button>
-                    <button className="text-white hover:text-blue-300 transition-colors">
-                        Search
-                    </button>
-                </motion.div>
-            </div>
-        </motion.div>
-    )}
-</AnimatePresence>
+                        {/* Mobile Menu Content */}
+                        <div className="h-full flex flex-col justify-center items-center px-6">
+                            {/* Navigation Items */}
+                            <motion.div
+                                className="flex flex-col space-y-8 text-center w-full max-w-sm"
+                                variants={containerVariants}
+                                initial="hidden"
+                                animate="visible"
+                            >
+                                {navItems.map((item, i) => (
+                                    <motion.div
+                                        key={item.name}
+                                        custom={i}
+                                        variants={mobileItemVariants}
+                                    >
+                                        <NavLink
+                                            to={item.path}
+                                            onClick={closeMenu}
+                                            className={({ isActive }) =>
+                                                `relative text-3xl font-semibold py-3 block transition-all ${isActive
+                                                    ? "text-blue-400"
+                                                    : "text-white hover:text-blue-300"
+                                                }`
+                                            }
+                                        >
+                                            {item.name}
+                                            {location.pathname === item.path && (
+                                                <motion.span
+                                                    className="absolute left-1/2 -bottom-1 w-2 h-2 bg-blue-400 rounded-full"
+                                                    layoutId="mobileActiveIndicator"
+                                                    transition={{ type: "spring", stiffness: 500, damping: 30 }}
+                                                />
+                                            )}
+                                        </NavLink>
+                                    </motion.div>
+                                ))}
+                            </motion.div>
+
+                            {/* Mobile Action Buttons */}
+                            <motion.div
+                                className="absolute bottom-10 left-0 right-0 flex justify-center space-x-6"
+                                variants={mobileItemVariants}
+                            >
+                                <button className="text-white hover:text-blue-300 transition-colors">
+                                    ENG
+                                </button>
+                                <button className="text-white hover:text-blue-300 transition-colors">
+                                    Search
+                                </button>
+                            </motion.div>
+                        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </motion.nav>
     );
 };

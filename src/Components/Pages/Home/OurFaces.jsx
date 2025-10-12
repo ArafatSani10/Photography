@@ -10,25 +10,25 @@ const teamMembers = [
   {
     name: "Sazzadul Bari",
     passion: "Founder & Core Photographer",
-    img: "https://i.ibb.co/YBhcjdrv/Sazzadul-Bari.jpg",
+    img: "../../../../public/Team members/Sazzadul Bari.jpg",
     fb: "https://www.facebook.com/sazzadul.bari.79/",
   },
   {
     name: "Emin EmRan",
     passion: "Co-Founder & Photographer",
-    img: "https://i.ibb.co/LDwDXTVZ/Emin-Em-Ran.jpg",
+    img: "../../../../public/Team members/Emin EmRan.jpg",
     fb: "https://www.facebook.com/mgkemran/",
   },
   {
     name: "Hafijur Rahman",
     passion: "Cinematographer",
-    img: "https://i.ibb.co/1GryLPXX/Hafijur.jpg",
+    img: "../../../../public/Team members/Hafijur.jpg",
     // fb: "https://facebook.com/",
   },
   {
     name: "Ariyan Khan Abir",
     passion: "Chief Event Organizer",
-    img: "https://i.ibb.co/99Rj76z4/Ariyan-Khan-Abir.jpg",
+    img: "../../../../public/Team members/Ariyan Khan Abir.jpg",
     // fb: "https://facebook.com/",
   },
 ];
