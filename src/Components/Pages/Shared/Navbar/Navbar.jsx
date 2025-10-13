@@ -362,7 +362,7 @@
 
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { CiMenuFries } from "react-icons/ci";
 
 const Navbar = () => {
@@ -476,7 +476,7 @@ const Navbar = () => {
         >
             <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
                 {/* Logo */}
-                <motion.div
+               <Link to="/"> <motion.div
                     className="flex items-center"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -490,7 +490,7 @@ const Navbar = () => {
                         alt="Logo"
                         className="w-[70px] h-[90px] md:w-[80px] md:h-[100px]  object-contain transition-all duration-500"
                     />
-                </motion.div>
+                </motion.div></Link>
 
                 {/* Desktop Menu */}
                 <motion.div

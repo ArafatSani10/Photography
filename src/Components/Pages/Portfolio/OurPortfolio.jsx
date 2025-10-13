@@ -313,8 +313,8 @@ const OurPortfolio = () => {
             animation: gradient 3s ease infinite;
           }
           
-          .animation-delay-2000 {
-            animation-delay: 2s;
+          .animation-delay-1000 {
+            animation-delay: 1s;
           }
           
           /* Staggered animation for grid items */
