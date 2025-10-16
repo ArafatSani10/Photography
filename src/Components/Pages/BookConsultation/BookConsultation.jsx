@@ -187,45 +187,44 @@ const BookConsultation = () => {
                 <div className="max-w-full w-full bg-white rounded-2xl shadow-2xl overflow-hidden grid md:grid-cols-2">
 
                     {/* বাম দিকের তথ্য সেকশন */}
-                    <div className="bg-gray-800 text-white p-8 sm:p-12 flex flex-col justify-between">
+                    <div className="bg-gray-800 text-white p-8 sm:p-12 flex flex-col justify-between rounded-t-xl sm:rounded-l-xl sm:rounded-tr-none">
                         <div>
-                            <h1 className="text-4xl font-extrabold mb-4 border-b-2 border-teal-500 pb-2">
-                                ফ্রি কনসাল্টেশন বুক করুন
+                            {/* প্রধান শিরোনাম */}
+                            <h1 className="text-4xl font-extrabold mb-4 border-b-2 border-teal-500 pb-3">
+                                আপনার স্বপ্নের ইভেন্টের জন্য ফ্রি কনসাল্টেশন
                             </h1>
-                            <p className="text-teal-300 text-lg mb-6">
-                                আপনার স্বপ্নের ফটোশুট নিয়ে আলোচনা করুন। **১৫ মিনিটের** এই কলে কোনো বাধ্যবাধকতা নেই।
+                            {/* উদ্বুদ্ধকারী সাবটেক্সট */}
+                            <p className="text-teal-300 text-lg mb-8">
+                                আপনার জীবনের গুরুত্বপূর্ণ মুহূর্তগুলি কীভাবে নিখুঁতভাবে ক্যামেরাবন্দী করা যায়, তা নিয়ে আমাদের অভিজ্ঞ টিমের সাথে আলোচনা করুন।
                             </p>
 
+                            {/* প্রধান সুবিধাগুলির তালিকা */}
                             <ul className="space-y-4 text-gray-200">
                                 <li className="flex items-start">
                                     <svg className="h-6 w-6 text-teal-400 mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                     </svg>
-                                    <span>আপনার **ফটোগ্রাফির প্রয়োজন** সম্পর্কে বিস্তারিত জানুন।</span>
+                                    <span>আপনার **ভিডিও এবং ছবির ভিশন** (Vision) এবং সৃজনশীল দিকনির্দেশনা (Creative Direction) নিয়ে আলোচনা করুন।</span>
                                 </li>
+
                                 <li className="flex items-start">
                                     <svg className="h-6 w-6 text-teal-400 mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                     </svg>
-                                    <span>আপনার **বাজেট ও ইভেন্টের তারিখ** অনুযায়ী সেরা প্যাকেজ বেছে নিন।</span>
-                                </li>
-                                <li className="flex items-start">
-                                    <svg className="h-6 w-6 text-teal-400 mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                    </svg>
-                                    <span>আমাদের কাজের পদ্ধতি এবং **ডেলিভারি প্রক্রিয়া** সম্পর্কে স্পষ্ট ধারণা পান।</span>
+                                    <span>শুটিং থেকে শুরু করে ফাইনাল **ডেলিভারি টাইমলাইন** পর্যন্ত আমাদের পেশাদার ওয়ার্কফ্লো সম্পর্কে স্পষ্ট ধারণা পান।</span>
                                 </li>
                             </ul>
                         </div>
 
                         {/* ট্রাস্ট ফ্যাক্টর বা Testimonial */}
-                        <div className="mt-8 pt-6 border-t border-gray-700">
+                        <div className="mt-10 pt-6 border-t border-gray-700">
                             <p className="italic text-gray-400">
-                                "তাদের কনসাল্টেশন আমার ইভেন্টের জন্য সেরা সিদ্ধান্ত নিতে সাহায্য করেছে। খুবই প্রফেশনাল এবং আন্তরিক!"
+                                <span className="text-3xl font-serif text-teal-500 mr-2">❝</span>তাদের সাথে কথা বলার পরেই আমরা নিশ্চিত হয়েছিলাম যে আমরা সঠিক ফটোগ্রাফার বেছে নিয়েছি। তাদের পেশাদারিত্ব এবং কাজের মান ছিল অসাধারণ!
                             </p>
-                            <p className="font-semibold mt-2 text-teal-500">- Sazzadul Bari (চিত্রমুল)</p>
+                            <p className="font-semibold mt-3 text-teal-500">- রিয়াজ আহমেদ ও ফাহমিদা (ওয়েডিং ক্লায়েন্ট)</p>
                         </div>
                     </div>
+
 
                     {/* ডান দিকের ফর্ম সেকশন */}
                     <div className="p-8 sm:p-12">

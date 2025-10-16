@@ -1,44 +1,51 @@
 import React from 'react';
 
 const OurServices = () => {
-  const services = [
+ const services = [
     {
       title: "Wedding Photography",
-      description: "Netflixu any khanumodvms casejava bde elle m",
+      description: "Capturing the raw emotion, timeless moments, and genuine narrative of your special day with an artistic touch.",
       icon: "📸",
       gradient: "from-pink-500 to-rose-500"
     },
     {
       title: "Wedding Cinematography",
-      description: "Esä posinio khin jemana voodvana.",
+      description: "Crafting a cinematic, high-definition film that tells the beautiful, flowing story of your wedding day.",
       icon: "🎥",
       gradient: "from-pink-500 to-blue-600"
     },
     {
       title: "Pre & Post Wedding Shoots",
-      description: "Edemn čaencci bmoon seä.",
+      description: "Creative and relaxed photography sessions to celebrate your journey and bond before and after the matrimonial event.",
       icon: "💑",
       gradient: "from-blue-500 to-cyan-500"
     },
     {
       title: "Event & Food Photography",
-      description: "Expamit foom re eh s jlure",
+      description: "Professional, high-impact visuals for corporate events, private parties, and mouth-watering, detailed food presentations.",
       icon: "🎪",
       gradient: "from-orange-500 to-red-500"
     },
     {
       title: "Outdoor Photography",
-      description: "Ei-elen oooriels canosum",
+      description: "Stunning portraits and candid shots utilizing natural light and beautiful, scenic locations as the perfect backdrop.",
       icon: "🌄",
       gradient: "from-green-500 to-emerald-500"
     },
     {
       title: "Customized Photo AI",
-      description: "Iyeneva ihodom adaijails",
+      description: "Leveraging cutting-edge artificial intelligence for creative editing, unique visual effects, and photo restoration services.",
       icon: "🤖",
       gradient: "from-gray-600 to-slate-700"
-    }
-  ];
+    },
+    {
+      title: "Event Management",
+      description: "Comprehensive planning, logistics, and on-site execution to ensure your entire event runs flawlessly from start to finish.",
+      icon: "📅", // Updated icon for better relevance
+      gradient: "from-gray-600 to-slate-700"
+    },
+];
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 py-12 px-4 sm:px-6 lg:px-8">

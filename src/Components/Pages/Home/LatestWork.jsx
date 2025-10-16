@@ -53,7 +53,7 @@ const LatestWork = () => {
     {
       id: 10,
       image: "/latestwork/IMG_3174.jpg",
-      category: "Wedding",
+      category: "Outdoor",
       type: "Photography",
     },
   ];
@@ -73,7 +73,7 @@ const LatestWork = () => {
 
       {/* Grid */}
       <div className="max-w-full mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {latestWork.map((work) => (
             <div
               key={work.id}

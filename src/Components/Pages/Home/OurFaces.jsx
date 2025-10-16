@@ -12,12 +12,21 @@ const teamMembers = [
     img: "/Team members/Sazzadul Bari.jpg",
     fb: "https://www.facebook.com/sazzadul.bari.79/",
   },
+ 
   {
     name: "Emin EmRan",
-    passion: "Co-Founder & Photographer",
+    passion: " Photographer",
     img: "/Team members/Emin EmRan.jpg",
     fb: "https://www.facebook.com/mgkemran/",
   },
+
+   {
+    name: "Rohim Badsha",
+    passion: "Cinematographer & Video Editor",
+    img: "/Team members/Rohim Badsha.jpg",
+    // fb: "https://www.facebook.com/sazzadul.bari.79/",
+  },
+
   {
     name: "Hafijur Rahman",
     passion: "Cinematographer",

@@ -80,7 +80,7 @@ const Footer = () => {
             {/* subtle animated background glow */}
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,200,0,0.08),transparent_70%)] pointer-events-none"></div>
 
-            <div className="max-w-7xl mx-auto relative z-10">
+            <div className="max-w-full mx-auto relative z-10">
                 {/* Top Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
                     {/* Brand Section */}
@@ -120,11 +120,11 @@ const Footer = () => {
                         </h4>
                         <ul className="space-y-2">
                             {[
-                                { name: "Portfolio", link: "#" },
-                                { name: "About Me", link: "#" },
-                                { name: "Services", link: "#" },
-                                { name: "Pricing", link: "#" },
-                                { name: "Blog", link: "#" },
+                                { name: "Home", link: "/" },
+                                { name: "About ", link: "/about" },
+                                { name: "Services", link: "/services" },
+                                { name: "Portfolio", link: "/portfolio" },
+                                { name: "Contact us", link: "/contact" },
                             ].map(({ name, link }, index) => (
                                 <motion.li key={index} whileHover={{ x: 6 }}>
                                     <a
@@ -146,10 +146,12 @@ const Footer = () => {
                         <ul className="space-y-2">
                             {[
                                 "Wedding Photography",
-                                "Portrait Sessions",
-                                "Event Coverage",
-                                "Commercial Shoots",
-                                "Photo Retouching",
+                                "Wedding Cinematography",
+                                "Pre & Post Wedding Shoots",
+                                "Event & Food Photography",
+                                "Outdoor Photography",
+                                "Customized Photo AI",
+                                "Event Management",
                             ].map((service, index) => (
                                 <motion.li key={index} whileHover={{ x: 6 }}>
                                     <span className="text-gray-400 hover:text-amber-400 cursor-pointer transition-colors">
