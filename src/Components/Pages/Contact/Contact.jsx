@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Send, Mail, Clock } from 'lucide-react';
+import { FaWhatsapp } from "react-icons/fa";
 import ContactBanner from './ContactBanner';
 
 const Contact = () => {
@@ -46,6 +47,7 @@ const Contact = () => {
             {/* Main Section */}
             <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 py-16 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto">
+
                     {/* Header */}
                     <motion.div
                         initial={{ opacity: 0, y: -30 }}
@@ -68,9 +70,31 @@ const Contact = () => {
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true }}
-                            className="space-y-8"
+                            className="space-y-8 relative"
                         >
-                    
+
+                            {/* WhatsApp Contact Card */}
+                            <motion.div
+                                initial={{ opacity: 0, y: -20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.7 }}
+                                className="absolute z-20 -top-16 right-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-2xl shadow-xl p-5 flex items-center gap-4 hover:scale-105 transition-transform duration-300"
+                            >
+                                <div className="bg-white/20 p-3 rounded-full">
+                                    <FaWhatsapp className="w-7 h-7" />
+                                </div>
+                                <div>
+                                    <h3 className="text-lg font-semibold">Chat on WhatsApp</h3>
+                                    <a
+                                        href="https://wa.me/8801676810476"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-sm underline hover:text-white"
+                                    >
+                                        +8801676810476
+                                    </a>
+                                </div>
+                            </motion.div>
 
                             {/* Map Section */}
                             <motion.div

@@ -1,108 +1,28 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Specialist = () => {
-    const specialists = [
-        {
-            id: 1,
-            title: 'Fashion Photography',
-            description: 'Capturing style and elegance in every frame',
-            image: 'https://plus.unsplash.com/premium_photo-1674389991679-e1a7a0b3e0a7?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvdG9ncmFwaGVyfGVufDB8fDB8fHww'
-        },
-        {
-            id: 2,
-            title: 'Lifestyle Photography',
-            description: 'Documenting real moments with authentic emotion',
-            image: 'https://i.ibb.co.com/gNpgh31/pexels-nickoloui-986733.jpg'
-        },
-        {
-            id: 3,
-            title: 'Nature Photography',
-            description: 'Exploring the beauty of the natural world',
-            image: 'https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D'
-        },
-        {
-            id: 4,
-            title: 'Portrait Photography',
-            description: 'Revealing the unique personality in every subject',
-            image: 'https://images.unsplash.com/photo-1542458579-bc6f69b5ce6b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHBvcnRyYWl0JTIwcGhvdG9ncmFwaHl8ZW58MHx8MHx8fDA%3D'
-        },
-        {
-            id: 5,
-            title: 'Wedding  Photography',
-            description: 'Capturing timeless memories of your special celebrations',
-            image: 'https://images.unsplash.com/photo-1604017011826-d3b4c23f8914?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2VkZGluZyUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600' // Placeholder for a relevant image URL
-        },
-        {
-            id: 6,
-            title: 'Drone & Aerial Photography',
-            description: 'Stunning perspectives from above with high-resolution aerial shots',
-            image: 'https://media.istockphoto.com/id/492683865/photo/drone-white-cloudy-dusk-sky.webp?a=1&b=1&s=612x612&w=0&k=20&c=__hRzo0-qolU_Te1rAZK8y9qZM_3krFW4QOLWFKNx-g=' // Placeholder for a relevant image URL
-        },
-        {
-            id: 7,
-            title: 'Food & Product  Photography',
-            description: 'Stunning perspectives from above with high-resolution aerial shots',
-            image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2R1Y3QlMjBQaG90b2dyYXBoeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600' // Placeholder for a relevant image URL
-        },
-        {
-            id: 8,
-            title: 'Events  Photography',
-            description: 'Stunning perspectives from above with high-resolution aerial shots',
-            image: 'https://images.unsplash.com/photo-1612389930565-6975454dc7cc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8RXZlbnQlMjBQaG90b2dyYXBoeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600' // Placeholder for a relevant image URL
-        }
-    ];
+    // The previous specialists array is now only used as a reference to copy data, 
+    // but the array itself is not defined or used here, per your request.
 
-    // Variants for the overall grid container to stagger the children's animation
+    // Variants definitions remain the same
     const containerVariants = {
         hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.2
-            }
-        }
+        visible: { opacity: 1, transition: { staggerChildren: 0.1 } }
     };
-
-    // Variants for each specialist item (for entrance animation)
     const itemVariants = {
-        hidden: {
-            opacity: 0,
-            y: 50
-        },
-        visible: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 0.6,
-                ease: "easeOut"
-            }
-        }
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
     };
-
-    // Variants for the image container (for the rounded-full to less-rounded hover effect)
     const imageVariants = {
-        normal: {
-            borderRadius: "50%", // Fully rounded (rounded-full)
-            scale: 1,
-            transition: {
-                duration: 0.4,
-                ease: "easeInOut"
-            }
-        },
-        hover: {
-            borderRadius: "20%", // Less rounded shape
-            scale: 1.05,
-            transition: {
-                duration: 0.4,
-                ease: "easeInOut"
-            }
-        }
+        normal: { borderRadius: "50%", scale: 1, transition: { duration: 0.4, ease: "easeInOut" } },
+        hover: { borderRadius: "20%", scale: 1.05, transition: { duration: 0.4, ease: "easeInOut" } }
     };
 
     return (
-        <div className='mt-20 py-16 bg-gradient-to-b from-white to-gray-50'>
-            <div className='container mx-auto px-4'>
+        <div className=' mt-10 bg-gradient-to-b from-white to-gray-50'>
+            <div className='max-w-full mx-auto px-4'>
                 {/* Header Section */}
                 <motion.div
                     className='text-center mb-16'
@@ -112,62 +32,89 @@ const Specialist = () => {
                     viewport={{ once: true }}
                 >
                     <h1 className='md:text-4xl text-2xl font-bold text-gray-800 mb-4'>
-                        Our Chitromul Specialist
+                        Our Chitromul Specialist 📸
                     </h1>
-                    <p className='text-lg text-gray-600 max-w-2xl mx-auto'>
+                    <p className='text-lg text-gray-600 max-w-3xl mx-auto'>
                         Meet our team of professional photographers specializing in different genres.
-                        Each brings unique expertise and creative vision to capture your perfect moments.
                     </p>
                 </motion.div>
 
-                {/* Specialist Grid */}
+                {/* Specialist Grid - RAW STRUCTURE (NO ARRAY, NO .MAP) - Using the new names */}
                 <motion.div
-                    className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'
+                    // This grid is set up for 5 items, so I've adjusted the layout slightly
+                    className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8'
                     variants={containerVariants}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: true, margin: "-50px" }}
+                    viewport={{ once: true, margin: "-100px" }}
                 >
-                    {specialists.map((specialist) => (
-                        <motion.div
-                            key={specialist.id}
-                            variants={itemVariants}
-                            className='group text-center'
-                        >
-                            {/* Image Container */}
-                            <motion.div
-                                className='w-72 h-72 mx-auto overflow-hidden relative shadow-lg'
-                                variants={imageVariants}
-                                initial="normal" // Apply initial state (fully rounded)
-                                whileHover="hover" // Animate to hover state (less rounded)
-                            >
-                                <motion.img
-                                    src={specialist.image}
-                                    alt={specialist.title}
-                                    className='w-full h-full object-cover'
-                                    // Use whileHover={{ scale: 1.1 }} on the image itself for a slight zoom effect
-                                    whileHover={{ scale: 1.1 }}
-                                    transition={{ duration: 0.4 }}
-                                />
-
-                                {/* Optional: Hover Effect Ring (Tailwind only) */}
-                                {/* This div acts as a surrounding border that also changes shape on hover */}
-                                <div className='absolute inset-0   rounded-full group-hover:rounded-[20%] transition-all duration-400 ease-in-out'></div>
+                    {/* Item 1: Wedding & Events Photography (ID 5) */}
+                    <Link to="/category/wedding">
+                        <motion.div key={5} variants={itemVariants} className='group text-center'>
+                            <motion.div className='w-full max-w-xs mx-auto overflow-hidden relative shadow-lg' style={{ aspectRatio: '1 / 1' }} variants={imageVariants} initial="normal" whileHover="hover">
+                                <motion.img src='https://images.unsplash.com/photo-1604017011826-d3b4c23f8914?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2VkZGluZyUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600' alt='Wedding & Events Photography' className='w-full h-full object-cover' whileHover={{ scale: 1.1 }} transition={{ duration: 0.4 }} />
                             </motion.div>
-
-                            {/* Content */}
-                            <motion.h3
-                                className='text-xl font-semibold text-gray-800 mt-6 mb-2'
-                                whileHover={{ color: "#3B82F6" }} // Tailwind blue-500 color
-                                transition={{ duration: 0.3 }}
-                            >
-                                {specialist.title}
+                            <motion.h3 className='text-xl font-semibold text-gray-800 mt-6 mb-2' whileHover={{ color: "#EF4444" }} transition={{ duration: 0.3 }}>
+                                Wedding  Photography
                             </motion.h3>
-                            <p className='text-gray-600 text-sm leading-relaxed'>
-                                {specialist.description}
-                            </p>
+                            <p className='text-gray-600 text-sm leading-relaxed'>Capturing the timeless memories of your special celebrations and corporate events with candid and formal coverage.</p>
                         </motion.div>
-                    ))}
+                    </Link>
+
+                    {/* Item 2: Fashion & Portrait Photography (ID 9) */}
+                    <Link to="/category/fashion & portrait photography">
+                        <motion.div key={9} variants={itemVariants} className='group text-center'>
+                            <motion.div className='w-full max-w-xs mx-auto overflow-hidden relative shadow-lg' style={{ aspectRatio: '1 / 1' }} variants={imageVariants} initial="normal" whileHover="hover">
+                                <motion.img src='https://images.unsplash.com/photo-1718964313564-a79ff1a60ffa?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8RmFzaGlvbiUyMCUyNiUyMFBvcnRyYWl0JTIwUGhvdG9ncmFwaHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600' alt='Fashion & Portrait Photography' className='w-full h-full object-cover' whileHover={{ scale: 1.1 }} transition={{ duration: 0.4 }} />
+                            </motion.div>
+                            <motion.h3 className='text-xl font-semibold text-gray-800 mt-6 mb-2' whileHover={{ color: "#EF4444" }} transition={{ duration: 0.3 }}>
+                                Fashion & Portrait Photography
+                            </motion.h3>
+                            <p className='text-gray-600 text-sm leading-relaxed'>Creating stunning, high-fashion editorials, professional headshots, and creative portraiture.</p>
+                        </motion.div>
+                    </Link>
+
+
+
+                    {/* Item 4: Food & Product Photography (ID 7) */}
+                    <Link to="/category/food&product-photgraphy">
+                        <motion.div key={7} variants={itemVariants} className='group text-center'>
+                            <motion.div className='w-full max-w-xs mx-auto overflow-hidden relative shadow-lg' style={{ aspectRatio: '1 / 1' }} variants={imageVariants} initial="normal" whileHover="hover">
+                                <motion.img src='https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2R1Y3QlMjBQaG90b2dyYXBoeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600' alt='Food & Product Photography' className='w-full h-full object-cover' whileHover={{ scale: 1.1 }} transition={{ duration: 0.4 }} />
+                            </motion.div>
+                            <motion.h3 className='text-xl font-semibold text-gray-800 mt-6 mb-2' whileHover={{ color: "#EF4444" }} transition={{ duration: 0.3 }}>
+                                Food & Product Photography
+                            </motion.h3>
+                            <p className='text-gray-600 text-sm leading-relaxed'>Creating mouth-watering food visuals and high-quality, stunning images to showcase your products.</p>
+                        </motion.div>
+                    </Link>
+
+                    {/* Item 3: Event Management (ID 6) */}
+                    <Link to="/category/event-management">
+                        <motion.div key={6} variants={itemVariants} className='group text-center'>
+                            <motion.div className='w-full max-w-xs mx-auto overflow-hidden relative shadow-lg' style={{ aspectRatio: '1 / 1' }} variants={imageVariants} initial="normal" whileHover="hover">
+                                <motion.img src='https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=800&q=80' alt='Event Management' className='w-full h-full object-cover' whileHover={{ scale: 1.1 }} transition={{ duration: 0.4 }} />
+                            </motion.div>
+                            <motion.h3 className='text-xl font-semibold text-gray-800 mt-6 mb-2' whileHover={{ color: "#EF4444" }} transition={{ duration: 0.3 }}>
+                                Event Management
+                            </motion.h3>
+                            <p className='text-gray-600 text-sm leading-relaxed'>Creating unforgettable experiences through seamless planning, creative design, and grand celebrations.</p>
+                        </motion.div>
+                    </Link>
+
+                    {/* Item 5: Nature Photography (ID 8) */}
+                    <Link to="/category/Nature-photography">
+                        <motion.div key={8} variants={itemVariants} className='group text-center'>
+                            <motion.div className='w-full max-w-xs mx-auto overflow-hidden relative shadow-lg' style={{ aspectRatio: '1 / 1' }} variants={imageVariants} initial="normal" whileHover="hover">
+                                <motion.img src='https://images.unsplash.com/photo-1584282479918-1ea22427dc0f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8TmF0dXJlJTIwUGhvdG9ncmFwaHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600' alt='Nature Photography' className='w-full h-full object-cover' whileHover={{ scale: 1.1 }} transition={{ duration: 0.4 }} />
+                            </motion.div>
+                            <motion.h3 className='text-xl font-semibold text-gray-800 mt-6 mb-2' whileHover={{ color: "#EF4444" }} transition={{ duration: 0.3 }}>
+                                Nature Photography
+                            </motion.h3>
+                            <p className='text-gray-600 text-sm leading-relaxed'>Capturing the beauty of the natural world, from sweeping landscapes to intricate wildlife details.</p>
+                        </motion.div>
+                    </Link>
+
                 </motion.div>
             </div>
         </div>

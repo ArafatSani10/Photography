@@ -6,12 +6,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const teamMembers = [
-  {
-    name: "Sazzadul Bari",
-    passion: "Founder & Core Photographer",
-    img: "/Team members/Sazzadul Bari.jpg",
-    fb: "https://www.facebook.com/sazzadul.bari.79/",
-  },
+  
 
   {
     name: "Emin EmRan",
@@ -25,6 +20,12 @@ const teamMembers = [
     passion: "Cinematographer & Video Editor",
     img: "/Team members/Rohim Badsha.jpg",
     // fb: "https://www.facebook.com/sazzadul.bari.79/",
+  },
+  {
+    name: "Sazzadul Bari",
+    passion: "Founder & Core Photographer",
+    img: "/Team members/Sazzadul Bari.jpg",
+    fb: "https://www.facebook.com/sazzadul.bari.79/",
   },
 
   {

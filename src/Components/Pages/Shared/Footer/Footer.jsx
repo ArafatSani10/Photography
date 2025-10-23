@@ -85,11 +85,10 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
                     {/* Brand Section */}
                     <motion.div className="space-y-5" variants={itemVariants}>
-                        
+
                         <img className="w-[90px]" src="https://i.ibb.co.com/Cs75xXFM/chitromul.png" alt="" />
                         <p className="text-gray-400 leading-relaxed">
-                            Capturing life's timeless beauty with passion, creativity, and
-                            emotion. Every frame tells your story.
+                            Capturing Moments, Creating Memories
                         </p>
 
                         <div className="flex space-x-4 mt-4">
@@ -145,12 +144,16 @@ const Footer = () => {
                         </h4>
                         <ul className="space-y-2">
                             {[
-                                "Wedding Photography",
-                                "Wedding Cinematography",
-                                "Pre & Post Wedding Shoots",
-                                "Event & Food Photography",
-                                "Outdoor Photography",
-                                "Customized Photo AI",
+                                "Wedding & Main Ceremony",
+                                // "Wedding Cinematography",
+                                "Gaye Holud",
+                                "Reception",
+                                "Pre & Post Wedding shoots",
+                                "Outdoor & Portfolio Shoots",
+                                "Birthday/Annaprashan",
+                                "Corporate & Commercial Events",
+                                "Documentary Film Making",
+                                "Music Video Production",
                                 "Event Management",
                             ].map((service, index) => (
                                 <motion.li key={index} whileHover={{ x: 6 }}>

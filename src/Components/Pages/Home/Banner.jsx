@@ -13,9 +13,9 @@ const Banner = () => {
         {
             image:
                 "https://i.ibb.co.com/Df5v8f0s/girl-photographer-with-old-camera-his-hands-stylish-fashionable-girl-photographer-city-street.jpg",
-            title: "Capture the Moment",
+            title: "Capturing Moments, Creating Memories",
             text: "Discover breathtaking photography from around the world.",
-            button: "View Portfolio", // ✅ Button will be rendered
+            // button: "View Portfolio", // ✅ Button will be rendered
         },
         {
             image: "https://i.ibb.co.com/RG5W973f/man-portrait-with-blue-lights-visual-effects.jpg",
@@ -24,7 +24,7 @@ const Banner = () => {
             // button: "Explore Now", // ❌ Button will NOT be rendered
         },
         {
-            image: "https://i.ibb.co.com/PZQVyHKC/woman-white-hat-taking-pictures.jpg",
+            image: "https://i.ibb.co.com/7tpk75xq/474132766-1631361907751682-5561711067256710114-n.jpg",
             title: "Travel & Lifestyle",
             text: "Find your next adventure through our lenses.",
             // button: "See Gallery", // ✅ Button will be rendered
@@ -63,7 +63,7 @@ const Banner = () => {
 
                             {/* ✅ Overlay Layer and Text Content */}
                             <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white text-center px-4">
-                                <h2 className="text-2xl md:text-6xl lg:text-7xl font-extrabold mb-4  tracking-tight shadow-text">
+                                <h2 className="text-2xl md:text-5xl lg:text-6xl font-extrabold mb-4  tracking-tight shadow-text">
                                     {item.title}
                                 </h2>
                                 <p className="text-sm md:text-xl lg:text-2xl max-w-3xl font-light mb-8  opacity-90">
@@ -136,5 +136,3 @@ const Banner = () => {
 };
 
 export default Banner;
-
-

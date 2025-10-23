@@ -2,65 +2,77 @@ import React from 'react';
 
 const OurServices = () => {
 const services = [
-    {
-      title: "Wedding Photography",
-      description: "Capturing the raw emotion, timeless moments, and genuine narrative of your special day with an artistic touch.",
-      icon: "💍", // Modern Icon for Commitment/Wedding
-      gradient: "from-pink-500 to-rose-500"
-    },
-    {
-      title: "Wedding Cinematography",
-      description: "Crafting a cinematic, high-definition film that tells the beautiful, flowing story of your wedding day.",
-      icon: "🎬", // Modern Icon for Filmmaking/Cinema
-      gradient: "from-pink-500 to-blue-600"
-    },
-    {
-      title: "Pre & Post Wedding Shoots",
-      description: "Creative and relaxed photography sessions to celebrate your journey and bond before and after the matrimonial event.",
-      icon: "💖", // Modern Icon for Love/Affection
-      gradient: "from-blue-500 to-cyan-500"
-    },
-    {
-      title: "Wedding & Events Photography",
-      description: "Capturing timeless memories of your special celebrations with a focus on candid moments and elegant details.",
-      icon: "🎉", // Modern Icon for Celebration/Events
-      gradient: "from-red-500 to-orange-500"
-    },
-    {
-      title: "Drone & Aerial Photography",
-      description: "Stunning, elevated perspectives from above with high-resolution aerial shots for breathtaking and unique views.",
-      icon: "🛰️", // Modern Icon for Advanced Aerial/Satellite View
-      gradient: "from-gray-500 to-slate-700"
-    },
-    {
-      title: "Food & Product Photography",
-      description: "High-impact visuals for mouth-watering, detailed food presentations and captivating e-commerce product shots.",
-      icon: "📦", // Modern Icon for Product/Commercial Goods
-      gradient: "from-amber-500 to-yellow-600"
-    },
-    {
-      title: "Outdoor Photography",
-      description: "Stunning portraits and candid shots utilizing natural light and beautiful, scenic locations as the perfect backdrop.",
-      icon: "🌳", // Modern Icon for Nature/Scenery
-      gradient: "from-green-500 to-emerald-500"
-    },
-    {
-      title: "Photo Album Creation",
-      description: "Preserve your memories in beautifully designed photo albums, crafted with artistic layouts, premium quality, and a personal storytelling touch for every occasion.",
-      icon: "🖼️", // Modern Icon for Picture Frame/Album
-      gradient: "from-blue-600 to-indigo-700"
-    },
-    {
-      title: "Event Management",
-      description: "Comprehensive planning, logistics, and on-site execution to ensure your entire event runs flawlessly from start to finish.",
-      icon: "📋", // Modern Icon for Clipboard/Planning
-      gradient: "from-gray-600 to-slate-700"
-    },
+  // 1. Wedding Group (Sub-categories as main services)
+  {
+    title: "Gaye Holud ",
+    description: "Vibrant and joyful documentation of the traditional Gaye Holud ceremony, focusing on lively colors, rituals, and candid emotions.",
+    icon: "🌼", // Flower/Marigold for Holud
+    gradient: "from-yellow-500 to-amber-500"
+  },
+  {
+    title: "Wedding & Main Ceremony",
+    description: "Full-coverage photography and cinematography for the main wedding event, capturing every essential ritual, emotion, and significant moment.",
+    icon: "💍", // Wedding Ring
+    gradient: "from-pink-500 to-rose-500"
+  },
+  {
+    title: "Reception",
+    description: "Elegant coverage of the post-wedding reception, including guest interactions, stage moments, and the overall celebratory atmosphere.",
+    icon: "🥂", // Toasting Glasses/Celebration
+    gradient: "from-purple-500 to-violet-600"
+  },
+  {
+    title: "Pre & Post Wedding Shoots",
+    description: "Creative and romantic photo/video shoots in scenic outdoor locations, perfect for capturing stunning portraits before (Pre) or after (Post) the wedding.",
+    icon: "💖", // Heart/Love
+    gradient: "from-blue-500 to-cyan-500"
+  },
+  // 2. Outdoor
+  {
+    title: "Outdoor & Portfolio Shoots",
+    description: "Professional coverage for personal portraits, fashion editorials, and general creative content filmed in diverse outdoor settings.",
+    icon: "🏞️", // Landscape/Outdoor Scene
+    gradient: "from-green-500 to-teal-500"
+  },
+  // 3. Birthday & Annaprashan
+  {
+    title: "Birthday & Annaprashan",
+    description: "Capturing the joy, candid moments, and milestones of birthday parties, Annaprashan (first rice ceremony), and other intimate family events.",
+    icon: "🎂", // Birthday Cake/Celebration
+    gradient: "from-orange-500 to-red-500"
+  },
+  // 4. Corporate
+  {
+    title: "Corporate & Commercial Events",
+    description: "Expert coverage for professional corporate events, seminars, product launches, conferences, and high-quality commercial content for brands.",
+    icon: "💼", // Briefcase/Professional
+    gradient: "from-gray-600 to-slate-800"
+  },
+  // 5. Documentary
+  {
+    title: "Documentary Film Making",
+    description: "In-depth research, conceptualization, filming, and post-production for long-form documentary films on social, historical, or educational subjects.",
+    icon: "🎬", // Clapperboard/Filming
+    gradient: "from-teal-600 to-cyan-700"
+  },
+  // 6. Music Video
+  {
+    title: "Music Video Production",
+    description: "Full-service music video production, covering theme development, high-quality filming, and creative post-production tailored to the song.",
+    icon: "🎵", // Musical Note
+    gradient: "from-indigo-500 to-blue-600"
+  },
+  // 7. Event Management
+  {
+    title: "Event Management",
+    description: "Complete solution for planning, coordination, venue management, logistics, and successful execution of all types of events, small to large.",
+    icon: "🗓️", // Calendar/Schedule
+    gradient: "from-pink-600 to-fuchsia-700"
+  },
 ];
 
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className=" bg-gradient-to-br from-slate-50 to-blue-50 py-12 px-4 sm:px-6 lg:px-8">
       {/* Header Section */}
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
@@ -78,11 +90,7 @@ const services = [
           {services.map((service, index) => (
             <div
               key={index}
-              // --- Card Height/Width Modification ---
-              // The `h-60` class makes the card shorter (fixed height)
-              // The `p-6` reduces padding to make the content tighter
               className="group relative bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden h-60" 
-              // Removed default height/min-height implicit in original design
             >
               {/* Gradient Background Effect */}
               <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>
@@ -104,8 +112,6 @@ const services = [
                   {service.description}
                 </p>
 
-                {/* Learn More Button (Moved to bottom right to fit the space better) */}
-                
               </div>
 
               {/* Hover Border Effect */}

@@ -362,7 +362,7 @@ const AboutChitromul = () => {
                                 <div className="aspect-[4/5] md:aspect-[3/4] w-full bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl flex items-center justify-center overflow-hidden">
                                     <img
                                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                                        src="https://plus.unsplash.com/premium_photo-1674389878102-fe66cd2bc29e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG1pc3Npb24lMjBwaG90b2dyYXBoZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600"
+                                        src="https://i.ibb.co.com/dws5GrQd/DSC00324.jpg"
                                         alt="Mission Photography"
                                     />
                                 </div>
@@ -401,18 +401,16 @@ const AboutChitromul = () => {
                                 Our Story
                             </h2>
 
-                            <p className="text-lg md:text-xl text-gray-700 mb-6 leading-relaxed border-l-4 border-pink-500 pl-6 py-3 bg-pink-50/50 rounded-lg">
-                                Our journey began over a <strong>decade ago</strong> when our founder, Sazzadul Bari, discovered her passion for photography during a backpacking trip across Europe.
-                            </p>
+
 
                             <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
-                                In 2015, we officially opened our studio with a simple philosophy: every photograph should tell a story. Today, our team continues this legacy, blending technical expertise with artistic vision to create images that preserve feelings for generations to come.
+                                In 2018, we officially opened our studio with a simple philosophy: every photograph should tell a story. Today, our team continues this legacy, blending technical expertise with artistic vision to create images that preserve feelings for generations to come.
                             </p>
 
                             {/* Statistics Cards */}
                             <div className="mt-10 flex flex-wrap justify-center md:justify-start gap-6">
                                 {[
-                                    { value: "10+", label: "Years of Storytelling", color: "purple" },
+                                    { value: "7+", label: "Years of Storytelling", color: "purple" },
                                     { value: "5000+", label: "Moments Captured", color: "pink" },
                                     { value: "98%", label: "Client Satisfaction", color: "blue" }
                                 ].map((stat, index) => (
@@ -437,13 +435,13 @@ const AboutChitromul = () => {
                             initial={{ opacity: 0, x: -50, rotate: -2 }}
                             animate={isVisible ? { opacity: 1, x: 0, rotate: 0 } : {}}
                             transition={{ duration: 1, delay: 0.4 }}
-                            className="lg:w-1/2 relative"
+                            className="lg:w-1/2 relative flex justify-center"
                         >
-                            <div className="bg-gradient-to-br from-gray-200 to-gray-300 rounded-3xl aspect-[4/3] flex items-center justify-center shadow-2xl overflow-hidden group">
+                            <div className="bg-gradient-to-br from-gray-200 to-gray-300 rounded-3xl flex items-center justify-center shadow-2xl overflow-hidden group relative inline-block">
                                 <img
-                                    src="https://plus.unsplash.com/premium_photo-1674389991716-c85ddd942811?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bWlzc2lvbiUyMHBob3RvZ3JhcGhlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600"
+                                    src="https://i.ibb.co.com/mrLrdvng/11.jpg"
                                     alt="Our Story"
-                                    className="w-full h-full object-cover rounded-3xl transition-transform duration-500 group-hover:scale-105"
+                                    className="rounded-3xl transition-transform duration-500 group-hover:scale-105 h-auto w-auto max-w-full max-h-full"
                                 />
                                 <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                                     <IconCompass className="h-16 w-16 text-white mb-4" />
@@ -451,6 +449,7 @@ const AboutChitromul = () => {
                                 </div>
                             </div>
                         </motion.div>
+
                     </div>
                 </div>
             </section>

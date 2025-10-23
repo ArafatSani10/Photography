@@ -124,5 +124,3 @@ const PortfolioBanner = () => {
 };
 
 export default PortfolioBanner;
-
-

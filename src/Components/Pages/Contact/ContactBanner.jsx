@@ -124,5 +124,3 @@ const ContactBanner = () => {
 };
 
 export default ContactBanner;
-
-

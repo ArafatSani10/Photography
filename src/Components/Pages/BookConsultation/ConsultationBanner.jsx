@@ -125,5 +125,3 @@ const ConsultationBanner = () => {
 };
 
 export default ConsultationBanner;
-
-

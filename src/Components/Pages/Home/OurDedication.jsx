@@ -1,4 +1,13 @@
 import React from 'react';
+// 1. **পরিবর্তন:** ছবির ইমপোর্ট লাইনটি সম্পূর্ণ মুছে দেওয়া হলো, 
+// কারণ পাবলিক পাথ ব্যবহারের ক্ষেত্রে এটি অপ্রয়োজনীয় এবং ভুল পদ্ধতি।
+
+// PUBLIC ফোল্ডারের রুট থেকে শুরু করে ছবির সঠিক পাথ।
+// মনে রাখবেন, আপনার ফাইল স্ট্রাকচারে সম্ভবত public/ownerPhotos/... আছে,
+// তাই URL-এ শুধুমাত্র "/ownerPhotos/..." এইটুকু থাকবে।
+// ডাবল "public/ownerPhotos/" অংশটি বাদ দেওয়া হয়েছে।
+const ownerImageUrl = '/ownerPhotos/481450005_1663005601253979_6860961757710885563_n.jpg';
+
 
 const OurDedication = () => {
     const meaningfulContent = {
@@ -46,8 +55,9 @@ const OurDedication = () => {
                     {/* Image Section */}
                     <div className="w-full md:w-1/2 order-1 md:order-2">
                         <img
-                            src="https://images.unsplash.com/photo-1603207757545-de4fffdb404c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZGVkaWNhdGlvbiUyMHBob3RvZ3JhcGhlcnxlbnwwfHwwfHx8MA%3D%3D"
-                            alt="Symbol of dedication and growth"
+                            // 2. সঠিক URL ব্যবহার করা হলো
+                            src={ownerImageUrl} 
+                            alt="Owner or founder of Team ChitroMul" 
                             className="w-full h-full rounded-lg shadow-2xl transition duration-500 ease-in-out hover:shadow-3xl"
                         />
                     </div>

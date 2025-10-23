@@ -12,7 +12,7 @@ const ServicesBanner = () => {
     const banners = [
 
         {
-            image: "https://i.ibb.co.com/RG5W973f/man-portrait-with-blue-lights-visual-effects.jpg",
+            image: "https://i.ibb.co.com/9kFR7mnd/Whats-App-Image-2025-10-23-at-20-21-42-393b6f26.jpg",
             title: "Services",
             text: "Your Vision, Our Creation",
             // button: "Explore Now", // ❌ Button will NOT be rendered
@@ -124,5 +124,3 @@ const ServicesBanner = () => {
 };
 
 export default ServicesBanner;
-
-
