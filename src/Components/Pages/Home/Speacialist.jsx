@@ -52,7 +52,7 @@ const Specialist = () => {
                     <Link to="/category/wedding">
                         <motion.div key={5} variants={itemVariants} className='group text-center'>
                             <motion.div className='w-full max-w-xs mx-auto overflow-hidden relative shadow-lg' style={{ aspectRatio: '1 / 1' }} variants={imageVariants} initial="normal" whileHover="hover">
-                                <motion.img src='https://images.unsplash.com/photo-1604017011826-d3b4c23f8914?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2VkZGluZyUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600' alt='Wedding & Events Photography' className='w-full h-full object-cover' whileHover={{ scale: 1.1 }} transition={{ duration: 0.4 }} />
+                                <motion.img src='https://i.ibb.co.com/BVpHqN6z/Whats-App-Image-2025-10-24-at-00-37-36-36cc5ca3.jpg' alt='Wedding & Events Photography' className='w-full h-full object-cover' whileHover={{ scale: 1.1 }} transition={{ duration: 0.4 }} />
                             </motion.div>
                             <motion.h3 className='text-xl font-semibold text-gray-800 mt-6 mb-2' whileHover={{ color: "#EF4444" }} transition={{ duration: 0.3 }}>
                                 Wedding  Photography
@@ -65,7 +65,7 @@ const Specialist = () => {
                     <Link to="/category/fashion & portrait photography">
                         <motion.div key={9} variants={itemVariants} className='group text-center'>
                             <motion.div className='w-full max-w-xs mx-auto overflow-hidden relative shadow-lg' style={{ aspectRatio: '1 / 1' }} variants={imageVariants} initial="normal" whileHover="hover">
-                                <motion.img src='https://images.unsplash.com/photo-1718964313564-a79ff1a60ffa?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8RmFzaGlvbiUyMCUyNiUyMFBvcnRyYWl0JTIwUGhvdG9ncmFwaHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600' alt='Fashion & Portrait Photography' className='w-full h-full object-cover' whileHover={{ scale: 1.1 }} transition={{ duration: 0.4 }} />
+                                <motion.img src='https://i.ibb.co.com/fzm0ZQWV/Whats-App-Image-2025-10-24-at-00-37-36-3e47875d.jpg' alt='Fashion & Portrait Photography' className='w-full h-full object-cover' whileHover={{ scale: 1.1 }} transition={{ duration: 0.4 }} />
                             </motion.div>
                             <motion.h3 className='text-xl font-semibold text-gray-800 mt-6 mb-2' whileHover={{ color: "#EF4444" }} transition={{ duration: 0.3 }}>
                                 Fashion & Portrait Photography
@@ -80,7 +80,7 @@ const Specialist = () => {
                     <Link to="/category/food&product-photgraphy">
                         <motion.div key={7} variants={itemVariants} className='group text-center'>
                             <motion.div className='w-full max-w-xs mx-auto overflow-hidden relative shadow-lg' style={{ aspectRatio: '1 / 1' }} variants={imageVariants} initial="normal" whileHover="hover">
-                                <motion.img src='https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2R1Y3QlMjBQaG90b2dyYXBoeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600' alt='Food & Product Photography' className='w-full h-full object-cover' whileHover={{ scale: 1.1 }} transition={{ duration: 0.4 }} />
+                                <motion.img src='https://i.ibb.co.com/ZpsXrWwF/food-mix-salad-noodles-grillea-chicken-garlic-greena-top-view.jpg' alt='Food & Product Photography' className='w-full h-full object-cover' whileHover={{ scale: 1.1 }} transition={{ duration: 0.4 }} />
                             </motion.div>
                             <motion.h3 className='text-xl font-semibold text-gray-800 mt-6 mb-2' whileHover={{ color: "#EF4444" }} transition={{ duration: 0.3 }}>
                                 Food & Product Photography
@@ -93,7 +93,7 @@ const Specialist = () => {
                     <Link to="/category/event-management">
                         <motion.div key={6} variants={itemVariants} className='group text-center'>
                             <motion.div className='w-full max-w-xs mx-auto overflow-hidden relative shadow-lg' style={{ aspectRatio: '1 / 1' }} variants={imageVariants} initial="normal" whileHover="hover">
-                                <motion.img src='https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=800&q=80' alt='Event Management' className='w-full h-full object-cover' whileHover={{ scale: 1.1 }} transition={{ duration: 0.4 }} />
+                                <motion.img src='https://i.ibb.co.com/fY15pPSB/Whats-App-Image-2025-10-24-at-00-43-15-3e530eec.jpg' alt='Event Management' className='w-full h-full object-cover' whileHover={{ scale: 1.1 }} transition={{ duration: 0.4 }} />
                             </motion.div>
                             <motion.h3 className='text-xl font-semibold text-gray-800 mt-6 mb-2' whileHover={{ color: "#EF4444" }} transition={{ duration: 0.3 }}>
                                 Event Management
@@ -106,7 +106,7 @@ const Specialist = () => {
                     <Link to="/category/Nature-photography">
                         <motion.div key={8} variants={itemVariants} className='group text-center'>
                             <motion.div className='w-full max-w-xs mx-auto overflow-hidden relative shadow-lg' style={{ aspectRatio: '1 / 1' }} variants={imageVariants} initial="normal" whileHover="hover">
-                                <motion.img src='https://images.unsplash.com/photo-1584282479918-1ea22427dc0f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8TmF0dXJlJTIwUGhvdG9ncmFwaHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600' alt='Nature Photography' className='w-full h-full object-cover' whileHover={{ scale: 1.1 }} transition={{ duration: 0.4 }} />
+                                <motion.img src='https://i.ibb.co.com/Vcfy5XWX/Whats-App-Image-2025-10-24-at-00-43-15-dea2b288.jpg' alt='Nature Photography' className='w-full h-full object-cover' whileHover={{ scale: 1.1 }} transition={{ duration: 0.4 }} />
                             </motion.div>
                             <motion.h3 className='text-xl font-semibold text-gray-800 mt-6 mb-2' whileHover={{ color: "#EF4444" }} transition={{ duration: 0.3 }}>
                                 Nature Photography
