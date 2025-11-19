@@ -19,6 +19,7 @@ import FashionAndPortait from './Components/Pages/Category/Fashion&Portrait/Fash
 import EventManagement from './Components/Pages/Category/EventManagement/EventManagement.jsx';
 import FoodAndProduct from './Components/Pages/Category/FoodAndProduct/FoodAndProduct.jsx';
 import Nature from './Components/Pages/Category/Nature/Nature.jsx';
+import EventCulture from './Components/Pages/Category/EventCulture/EventCulture.jsx';
 
 const router = createBrowserRouter([
   {
@@ -80,6 +81,11 @@ const router = createBrowserRouter([
       {
         path: '/category/Nature-photography',
         element: <Nature></Nature>
+      },
+
+      {
+        path:'/category/LiveEventCultural',
+        element:<EventCulture></EventCulture>
       },
     ],
   },

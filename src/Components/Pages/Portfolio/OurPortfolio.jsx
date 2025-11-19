@@ -71,9 +71,8 @@ const OurPortfolio = () => {
 
       {/* Header */}
       <div
-        className={`text-center mb-16 transform transition-all duration-1000 ${
-          isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-        }`}
+        className={`text-center mb-16 transform transition-all duration-1000 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
       >
         <div className="inline-block mb-4">
           <span className="text-sm font-semibold text-purple-600 bg-purple-100 px-4 py-2 rounded-full animate-bounce">
@@ -92,9 +91,8 @@ const OurPortfolio = () => {
 
       {/* Tabs */}
       <div
-        className={`max-w-full mx-auto mb-12 transform transition-all duration-1000 delay-300 ${
-          isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-        }`}
+        className={`max-w-full mx-auto mb-12 transform transition-all duration-1000 delay-300 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
       >
         <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-2 border border-white/20">
           <div className="flex flex-wrap justify-center gap-2">
@@ -102,11 +100,10 @@ const OurPortfolio = () => {
               <button
                 key={category.id}
                 onClick={() => setActiveTab(category.id)}
-                className={`flex items-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all duration-500 transform hover:scale-105 ${
-                  activeTab === category.id
+                className={`flex items-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all duration-500 transform hover:scale-105 ${activeTab === category.id
                     ? "bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg"
                     : "text-gray-600 hover:text-purple-600 hover:bg-purple-50"
-                }`}
+                  }`}
               >
                 <span className="text-lg">{category.icon}</span>
                 <span>{category.name}</span>
@@ -122,9 +119,8 @@ const OurPortfolio = () => {
       {/* Portfolio Grid */}
       <div className="max-w-full mx-auto">
         <div
-          className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 transform transition-all duration-1000 delay-500 ${
-            isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-          }`}
+          className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 transform transition-all duration-1000 delay-500 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+            }`}
         >
           {filteredItems.map((item, index) => (
             <div

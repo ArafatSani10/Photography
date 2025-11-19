@@ -15,8 +15,8 @@ import outdoorPackages1 from "../../../../public/Packages Outdoor/1.webp"
 import outdoorPackages2 from "../../../../public/Packages Outdoor/2.webp"
 import outdoorPackages3 from "../../../../public/Packages Outdoor/3.webp"
 
-const regularImages = [regular1, regular2, ];
-const premiumImages = [premium1, premium2, ];
+const regularImages = [regular1, regular2,];
+const premiumImages = [premium1, premium2,];
 const outdoorImages = [outdoorPackages1, outdoorPackages2, outdoorPackages3];
 
 const ImageModal = ({ src, alt, onClose }) => {

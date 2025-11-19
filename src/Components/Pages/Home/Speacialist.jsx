@@ -61,43 +61,43 @@ const Specialist = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
-         {/* Item 1: Wedding & Events Photography (ID 5) */}
-<Link to="/category/wedding">
-  <motion.div
-    key={5}
-    variants={itemVariants}
-    className="group text-center"
-  >
-    <motion.div
-      className="w-full max-w-xs mx-auto overflow-hidden relative shadow-lg"
-      style={{ aspectRatio: "1 / 1" }}
-      variants={imageVariants}
-      initial="normal"
-      whileHover="hover"
-    >
-      <motion.img
-        src="/specialist/items_01.webp"
-        alt="Wedding & Events Photography"
-        className="w-full h-full object-cover"
-        whileHover={{ scale: 1.1 }}
-        transition={{ duration: 0.4 }}
-      />
-    </motion.div>
+          {/* Item 1: Wedding & Events Photography (ID 5) */}
+          <Link to="/category/wedding">
+            <motion.div
+              key={5}
+              variants={itemVariants}
+              className="group text-center"
+            >
+              <motion.div
+                className="w-full max-w-xs mx-auto overflow-hidden relative shadow-lg"
+                style={{ aspectRatio: "1 / 1" }}
+                variants={imageVariants}
+                initial="normal"
+                whileHover="hover"
+              >
+                <motion.img
+                  src="/specialist/items_01.webp"
+                  alt="Wedding & Events Photography"
+                  className="w-full h-full object-cover"
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ duration: 0.4 }}
+                />
+              </motion.div>
 
-    <motion.h3
-      className="text-xl font-semibold text-gray-800 mt-6 mb-2"
-      whileHover={{ color: "#EF4444" }}
-      transition={{ duration: 0.3 }}
-    >
-      Wedding Photography
-    </motion.h3>
+              <motion.h3
+                className="text-xl font-semibold text-gray-800 mt-6 mb-2"
+                whileHover={{ color: "#EF4444" }}
+                transition={{ duration: 0.3 }}
+              >
+                Wedding Photography
+              </motion.h3>
 
-    <p className="text-gray-600 text-sm leading-relaxed">
-      Capturing your timeless moments with elegance, creativity, and emotion —
-      from intimate weddings to grand celebrations.
-    </p>
-  </motion.div>
-</Link>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Capturing your timeless moments with elegance, creativity, and emotion —
+                from intimate weddings to grand celebrations.
+              </p>
+            </motion.div>
+          </Link>
 
 
           {/* Item 2: Fashion & Portrait Photography (ID 9) */}
@@ -240,6 +240,42 @@ const Specialist = () => {
               <p className="text-gray-600 text-sm leading-relaxed">
                 Capturing the beauty of the natural world, from sweeping
                 landscapes to intricate wildlife details.
+              </p>
+            </motion.div>
+          </Link>
+
+
+          {/* Item 6: LiveEventCultural Photography (ID 8) */}
+          <Link to="/category/LiveEventCultural">
+            <motion.div
+              key={8}
+              variants={itemVariants}
+              className="group text-center"
+            >
+              <motion.div
+                className="w-full max-w-xs mx-auto overflow-hidden relative shadow-lg"
+                style={{ aspectRatio: "1 / 1" }}
+                variants={imageVariants}
+                initial="normal"
+                whileHover="hover"
+              >
+                <motion.img
+                  src="/Live Event Culture/DSC00210.jpg"
+                  alt="Nature Photography"
+                  className="w-full h-full object-cover"
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ duration: 0.4 }}
+                />
+              </motion.div>
+              <motion.h3
+                className="text-xl font-semibold text-gray-800 mt-6 mb-2"
+                whileHover={{ color: "#EF4444" }}
+                transition={{ duration: 0.3 }}
+              >
+                Live Event Cultural Photography
+              </motion.h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Authentic, vibrant photography that captures the true spirit of your events and cultural moments..
               </p>
             </motion.div>
           </Link>
