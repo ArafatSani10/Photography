@@ -44,7 +44,7 @@ const OurCreativity = () => {
     ];
 
     // YouTube Configuration
-    const youtubeVideoId = "8c6eOuDOdjk";
+    const youtubeVideoId = "WQeFGRVY36s";
     const youtubeChannelLink = "https://www.youtube.com/@chitromul";
     const youtubeChannelName = "Chitromul (চিত্রমূল) ";
 
