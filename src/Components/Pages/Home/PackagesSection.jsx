@@ -124,7 +124,7 @@ const PackagesSection = () => {
                     ))}
                 </div>
 
-                <hr className="my-8 border-t-2 border-dashed border-gray-400"++ />
+                <hr className="my-8 border-t-2 border-dashed border-gray-400" />
 
                 {/* Outdoor Packages Section */}
                 <h2 className='text-3xl md:text-4xl my-5 text-center font-extrabold text-gray-800 border-b-4 border-green-500 inline-block mx-auto pb-1'>
