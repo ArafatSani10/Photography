@@ -17,10 +17,10 @@ import outdoorPackages1 from "../../../../public/package-outdoor/1.webp"
 import outdoorPackages2 from "../../../../public/package-outdoor/2.webp"
 
 // wedding photoshoot 
-import wedding1 from "../../../../public/Packages wedding/1.webp"
-import wedding2 from "../../../../public/Packages wedding/2.webp"
-import wedding3 from "../../../../public/Packages wedding/3.webp"
-import wedding4 from "../../../../public/Packages wedding/4.webp"
+import wedding1 from "../../../../public/Package wedding/1.webp"
+import wedding2 from "../../../../public/Package wedding/2.webp"
+import wedding3 from "../../../../public/Package wedding/3.webp"
+import wedding4 from "../../../../public/Package wedding/4.webp"
 
 const regularImages = [regular1, regular2, regular3, regular4];
 const premiumImages = [premium1, premium2, premium3, premium4];
