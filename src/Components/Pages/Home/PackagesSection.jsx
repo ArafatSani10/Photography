@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 
 // regular packages
-import regular1 from "../../../../public/Packages-regular/4.webp"
-import regular2 from "../../../../public/Packages-regular/6.webp"
-import regular3 from "../../../../public/Packages-regular/9.webp"
-import regular4 from "../../../../public/Packages-regular/10.webp"
+import regular1 from "../../../../public/Packages-regular/basic.webp"
+import regular2 from "../../../../public/Packages-regular/basic1.webp"
+import regular3 from "../../../../public/Packages-regular/basic2.webp"
+import regular4 from "../../../../public/Packages-regular/basic3.webp"
 
 
 // premium packages
-import premium1 from "../../../../public/Packages Premium/5.webp"
-import premium2 from "../../../../public/Packages Premium/7.webp"
-import premium3 from "../../../../public/Packages Premium/8.webp"
-import premium4 from "../../../../public/Packages Premium/11.webp"
+import premium1 from "../../../../public/Packages Premium/prem.webp"
+import premium2 from "../../../../public/Packages Premium/prem1.webp"
+import premium3 from "../../../../public/Packages Premium/prem2.webp"
+import premium4 from "../../../../public/Packages Premium/prem3.webp"
 
 
 // outdoor packages
@@ -19,9 +19,16 @@ import outdoorPackages1 from "../../../../public/package-outdoor/1.webp"
 import outdoorPackages2 from "../../../../public/package-outdoor/2.webp"
 import outdoorPackages3 from "../../../../public/package-outdoor/3.webp"
 
+// wedding photoshoot 
+import wedding1 from "../../../../public/Packages wedding/1.webp"
+import wedding2 from "../../../../public/Packages wedding/2.webp"
+import wedding3 from "../../../../public/Packages wedding/3.webp"
+import wedding4 from "../../../../public/Packages wedding/4.webp"
+
 const regularImages = [regular1, regular2,regular3, regular4,];
 const premiumImages = [premium1, premium2,premium3, premium4,];
 const outdoorImages = [outdoorPackages1, outdoorPackages2, outdoorPackages3];
+const weddingImages = [wedding1, wedding2,wedding3, wedding4,];
 
 const ImageModal = ({ src, alt, onClose }) => {
     if (!src) return null;
@@ -128,6 +135,28 @@ const PackagesSection = () => {
 
             </div>
 
+                <hr className="my-8 border-t-2 border-dashed border-gray-400" />
+
+                {/* Wedding Packages Section */}
+                <h1 className='text-3xl md:text-4xl my-5 text-center font-extrabold text-gray-800 border-b-4 border-green-500 inline-block mx-auto pb-1'>
+                   Only Wedding Photoshoot Packages
+                </h1>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+                    {weddingImages.map((src, index) => (
+                        <ImageSquareCard
+                            key={`wedding-${index}`}
+                            src={src}
+                            alt={`Wedding Package ${index + 1}`}
+                            isPremium={false}
+                            onClick={() => openModal(src, `Outdoor Package ${index + 1}`)}
+                        />
+                    ))}
+                </div>
+
+            </div>
+
+
+            
             <ImageModal
                 src={selectedImage ? selectedImage.src : null}
                 alt={selectedImage ? selectedImage.alt : ""}
