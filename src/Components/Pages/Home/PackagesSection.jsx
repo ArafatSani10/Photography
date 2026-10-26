@@ -6,18 +6,15 @@ import regular2 from "../../../../public/Packages-regular/basic1.webp"
 import regular3 from "../../../../public/Packages-regular/basic2.webp"
 import regular4 from "../../../../public/Packages-regular/basic3.webp"
 
-
 // premium packages
 import premium1 from "../../../../public/Packages Premium/prem.webp"
 import premium2 from "../../../../public/Packages Premium/prem1.webp"
 import premium3 from "../../../../public/Packages Premium/prem2.webp"
 import premium4 from "../../../../public/Packages Premium/prem3.webp"
 
-
-// outdoor packages
+// outdoor packages 
 import outdoorPackages1 from "../../../../public/package-outdoor/1.webp"
 import outdoorPackages2 from "../../../../public/package-outdoor/2.webp"
-
 
 // wedding photoshoot 
 import wedding1 from "../../../../public/Packages wedding/1.webp"
@@ -25,20 +22,27 @@ import wedding2 from "../../../../public/Packages wedding/2.webp"
 import wedding3 from "../../../../public/Packages wedding/3.webp"
 import wedding4 from "../../../../public/Packages wedding/4.webp"
 
-const regularImages = [regular1, regular2,regular3, regular4,];
-const premiumImages = [premium1, premium2,premium3, premium4,];
-const outdoorImages = [outdoorPackages1, outdoorPackages2, outdoorPackages3];
-const weddingImages = [wedding1, wedding2,wedding3, wedding4,];
+const regularImages = [regular1, regular2, regular3, regular4];
+const premiumImages = [premium1, premium2, premium3, premium4];
+const outdoorImages = [outdoorPackages1, outdoorPackages2]; 
+const weddingImages = [wedding1, wedding2, wedding3, wedding4];
 
 const ImageModal = ({ src, alt, onClose }) => {
     if (!src) return null;
 
     return (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-90 backdrop-blur-sm transition-opacity duration-300" onClick={onClose}
+        <div 
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-90 backdrop-blur-sm transition-opacity duration-300" 
+            onClick={onClose}
         >
-            <div className="relative max-w-4xl max-h-full w-full h-auto" onClick={(e) => e.stopPropagation()}
+            <div 
+                className="relative max-w-4xl max-h-full w-full h-auto" 
+                onClick={(e) => e.stopPropagation()}
             >
-                <button onClick={onClose} className="absolute -top-10 right-0 md:-right-10 text-white text-4xl font-light hover:text-red-500 transition-colors z-50" aria-label="Close"
+                <button 
+                    onClick={onClose} 
+                    className="absolute -top-10 right-0 md:-right-10 text-white text-4xl font-light hover:text-red-500 transition-colors z-50" 
+                    aria-label="Close"
                 >
                     &times;
                 </button>
@@ -51,10 +55,12 @@ const ImageModal = ({ src, alt, onClose }) => {
 };
 
 const ImageSquareCard = ({ src, alt, isPremium = false, onClick }) => (
-    <div onClick={onClick} className={`
-        overflow-hidden rounded-lg shadow-xl cursor-pointer aspect-square w-full transition-all duration-300 hover:shadow-2xl hover:brightness-105 
-        ${isPremium ? 'border-4 border-yellow-500' : 'border border-gray-300'}
-    `}
+    <div 
+        onClick={onClick} 
+        className={`
+            overflow-hidden rounded-lg shadow-xl cursor-pointer aspect-square w-full transition-all duration-300 hover:shadow-2xl hover:brightness-105 
+            ${isPremium ? 'border-4 border-yellow-500' : 'border border-gray-300'}
+        `}
     >
         <img src={src} alt={alt} className="w-full h-full object-cover" />
     </div>
@@ -62,9 +68,11 @@ const ImageSquareCard = ({ src, alt, isPremium = false, onClick }) => (
 
 const PackagesSection = () => {
     const [selectedImage, setSelectedImage] = useState(null);
+
     const openModal = (src, alt) => {
         setSelectedImage({ src, alt });
     };
+
     const closeModal = () => {
         setSelectedImage(null);
     };
@@ -72,7 +80,6 @@ const PackagesSection = () => {
     return (
         <section className="py-12 bg-gray-100">
             <div className="text-center mb-12 md:mb-16">
-                {/* Your Headline */}
                 <h1 className='text-2xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-3'>
                     Our <span className="text-blue-600">Chitromul</span> Photo Packages
                 </h1>
@@ -83,9 +90,10 @@ const PackagesSection = () => {
 
             <div className="container mx-auto px-4 max-w-full">
 
-                <h1 className='text-3xl md:text-4xl my-5 text-center font-extrabold text-gray-800 border-b-4 border-blue-500 inline-block mx-auto pb-1'>
+                {/* Regular Packages */}
+                <h2 className='text-3xl md:text-4xl my-5 text-center font-extrabold text-gray-800 border-b-4 border-blue-500 inline-block mx-auto pb-1'>
                     Regular Packages
-                </h1>
+                </h2>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-12">
                     {regularImages.map((src, index) => (
                         <ImageSquareCard
@@ -100,9 +108,10 @@ const PackagesSection = () => {
 
                 <hr className="my-8 border-t-2 border-dashed border-gray-400" />
 
-                <h1 className='text-3xl md:text-4xl my-5 text-center font-extrabold text-gray-800 border-b-4 border-yellow-500 inline-block mx-auto pb-1'>
+                {/* Premium Packages */}
+                <h2 className='text-3xl md:text-4xl my-5 text-center font-extrabold text-gray-800 border-b-4 border-yellow-500 inline-block mx-auto pb-1'>
                     Premium Packages
-                </h1>
+                </h2>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-12">
                     {premiumImages.map((src, index) => (
                         <ImageSquareCard
@@ -115,13 +124,13 @@ const PackagesSection = () => {
                     ))}
                 </div>
 
-                <hr className="my-8 border-t-2 border-dashed border-gray-400" />
+                <hr className="my-8 border-t-2 border-dashed border-gray-400"++ />
 
                 {/* Outdoor Packages Section */}
-                <h1 className='text-3xl md:text-4xl my-5 text-center font-extrabold text-gray-800 border-b-4 border-green-500 inline-block mx-auto pb-1'>
+                <h2 className='text-3xl md:text-4xl my-5 text-center font-extrabold text-gray-800 border-b-4 border-green-500 inline-block mx-auto pb-1'>
                     Outdoor Packages
-                </h1>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+                </h2>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mb-12">
                     {outdoorImages.map((src, index) => (
                         <ImageSquareCard
                             key={`outdoor-${index}`}
@@ -133,14 +142,12 @@ const PackagesSection = () => {
                     ))}
                 </div>
 
-            </div>
-
                 <hr className="my-8 border-t-2 border-dashed border-gray-400" />
 
                 {/* Wedding Packages Section */}
-                <h1 className='text-3xl md:text-4xl my-5 text-center font-extrabold text-gray-800 border-b-4 border-green-500 inline-block mx-auto pb-1'>
-                   Only Wedding Photoshoot Packages
-                </h1>
+                <h2 className='text-3xl md:text-4xl my-5 text-center font-extrabold text-gray-800 border-b-4 border-pink-500 inline-block mx-auto pb-1'>
+                    Only Wedding Photoshoot Packages
+                </h2>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
                     {weddingImages.map((src, index) => (
                         <ImageSquareCard
@@ -148,15 +155,13 @@ const PackagesSection = () => {
                             src={src}
                             alt={`Wedding Package ${index + 1}`}
                             isPremium={false}
-                            onClick={() => openModal(src, `Outdoor Package ${index + 1}`)}
+                            onClick={() => openModal(src, `Wedding Package ${index + 1}`)}
                         />
                     ))}
                 </div>
 
             </div>
 
-
-            
             <ImageModal
                 src={selectedImage ? selectedImage.src : null}
                 alt={selectedImage ? selectedImage.alt : ""}
