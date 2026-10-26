@@ -17,7 +17,7 @@ import premium4 from "../../../../public/Packages Premium/prem3.webp"
 // outdoor packages
 import outdoorPackages1 from "../../../../public/package-outdoor/1.webp"
 import outdoorPackages2 from "../../../../public/package-outdoor/2.webp"
-import outdoorPackages3 from "../../../../public/package-outdoor/3.webp"
+
 
 // wedding photoshoot 
 import wedding1 from "../../../../public/Packages wedding/1.webp"

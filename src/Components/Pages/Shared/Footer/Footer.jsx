@@ -239,7 +239,7 @@ const Footer = () => {
           <p>
             © {new Date().getFullYear()}{" "}
             <span className="text-amber-400 font-semibold">Chitromul</span>. All
-            rights reserved.
+            rights reserved.Website crafted by STechNest
           </p>
           <div className="flex space-x-6 mt-3 md:mt-0">
             {["Privacy Policy", "Terms of Service", "Cookie Policy"].map(
