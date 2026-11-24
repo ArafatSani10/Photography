@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 
 // regular packages
-import regular1 from "../../../../public/Packages-regular/basic.webp"
-import regular2 from "../../../../public/Packages-regular/basic1.webp"
-import regular3 from "../../../../public/Packages-regular/basic2.webp"
-import regular4 from "../../../../public/Packages-regular/basic3.webp"
+import regular1 from "../../../../public/Packages-regular/rg1.webp"
+import regular2 from "../../../../public/Packages-regular/rg2.webp"
+import regular3 from "../../../../public/Packages-regular/rg3.webp"
+import regular4 from "../../../../public/Packages-regular/rg4.webp"
 
 
 // premium packages
-import premium1 from "../../../../public/Packages Premium/prem.webp"
-import premium2 from "../../../../public/Packages Premium/prem1.webp"
-import premium3 from "../../../../public/Packages Premium/prem2.webp"
-import premium4 from "../../../../public/Packages Premium/prem3.webp"
+import premium1 from "../../../../public/Packages Premium/pr1.webp"
+import premium2 from "../../../../public/Packages Premium/pr2.webp"
+import premium3 from "../../../../public/Packages Premium/pr3.webp"
+import premium4 from "../../../../public/Packages Premium/pr4.webp"
 
 
 // outdoor packages
